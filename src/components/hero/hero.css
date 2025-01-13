@@ -3,6 +3,15 @@
     overflow: hidden;
     display: flex;
   }
+
+/* Ensure it's visible only in Hero section */
+.hero .certification-logo {
+  display: block;
+}
+.certification-logo {
+  display: none; /* Hide it by default */
+}
+
   
   .bg {
     position: absolute;

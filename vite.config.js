@@ -1,8 +1,8 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import ghPages from "vite-plugin-gh-pages";
+import { ghPages } from "vite-plugin-gh-pages"; // Check if 'ghPages' is a named export
 
 export default defineConfig({
   plugins: [react(), ghPages()],
-  base: '/Portfolio-JatinMittal/', // Set the repository name as the base
+  base: '/Portfolio-JatinMittal/', // Ensure this matches your GitHub repo name
 });

@@ -1,5 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import "./hero.css";
+import Certifications from "./Certifications";
 import Speech from "./Speech";
 import { motion } from "motion/react";
 import Shape from "./Shape";
@@ -89,7 +90,7 @@ const Hero = () => {
             duration: 4,
             ease: "easeInOut",
           }}
-          href="#services"
+          href="/#Services"
           className="scroll"
         >
           <svg
@@ -141,15 +142,16 @@ const Hero = () => {
             />
           </motion.a>
           <motion.a variants={followVariants} href="/">
-            <img
-              src={`${import.meta.env.BASE_URL}github.png`}
-              alt="GitHub"
-            />
+            <img src={`${import.meta.env.BASE_URL}github.png`} alt="GitHub" />
           </motion.a>
           <motion.div variants={followVariants} className="followTextContainer">
             <div className="followText">FOLLOW ME</div>
           </motion.div>
         </motion.div>
+
+        {/* THIS IS NEW LOGO FOR OPENING THE CERTIFCIATION POP-UP CONATINER (HORIZONTAL SCROLLLABLE) */}
+
+        <Certifications/>
 
         {/* BUBBLE */}
         <Speech />
