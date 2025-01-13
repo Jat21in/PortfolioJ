@@ -1,0 +1,78 @@
+/* Full screen layout for the achievements section */
+.achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Reduced gap between title and cards */
+    padding: 20px; /* Adjusted padding for full screen */
+    background-color: rgba(2, 2, 45, 0.066);
+    border-radius: 50px;
+    min-height: 100vh; /* Ensure the section takes up the full viewport height */
+    margin-bottom: 0; /* Remove additional margin */
+  }
+  
+  .achievementsTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #dd4c62;
+    text-align: center;
+    margin-bottom: 10px; /* Reduced margin bottom to make it closer to the images */
+  }
+  
+  .achievementsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Reduced gap between cards */
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px; /* Maximum width for the grid */
+    margin: 0 auto; /* Center the grid within the page */
+  }
+  
+  .achievementCard {
+    background: rgba(2, 2, 45, 0.187);
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .achievementCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .achievementCard img {
+    width: 100%;
+    height: 180px; /* Reduced height for images */
+    object-fit: cover;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .achievementCard h2 {
+    font-size: 1.1rem; /* Reduced font size for the label */
+    font-weight: 500;
+    color: white;
+    padding: 15px; /* Reduced padding for the label */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .achievementsGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .achievementCard {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  

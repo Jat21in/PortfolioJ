@@ -4,5 +4,5 @@ import { ghPages } from "vite-plugin-gh-pages"; // Check if 'ghPages' is a named
 
 export default defineConfig({
   plugins: [react(), ghPages()],
-  base: '/Portfolio-JatinMittal/', // Ensure this matches your GitHub repo name
+  base: '/PortfolioJ/', // Ensure this matches your GitHub repo name
 });
