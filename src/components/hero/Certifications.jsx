@@ -12,6 +12,20 @@ const Certifications = () => {
 
   const certifications = [
     { 
+      logo: `${import.meta.env.BASE_URL}meta.png`,  
+      name: "React Native", 
+      issuer: "Meta", 
+      issued: "Jan 2025", 
+      link: "https://www.coursera.org/account/accomplishments/verify/059NDWE7IV44"
+    },
+    { 
+      logo: `${import.meta.env.BASE_URL}colorado.png`, 
+      name: "Developing Industrial IoT-Specialization Certificate", 
+      issuer: "University of Colorado Boulder", 
+      issued: "Mar 2024", 
+      link: "https://www.coursera.org/account/accomplishments/specialization/H0R15DFV0JTJ"
+    },
+    { 
       logo: `${import.meta.env.BASE_URL}coursera.png`,  
       name: "Databases and SQL for Data Science", 
       issuer: "Coursera", 
