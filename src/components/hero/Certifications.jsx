@@ -12,6 +12,13 @@ const Certifications = () => {
 
   const certifications = [
     { 
+      logo: `${import.meta.env.BASE_URL}nptel.png`,  
+      name: "Foundation of Cloud IoT Edge ML", 
+      issuer: "NPTEL - Skill India", 
+      issued: "April 2025", 
+      link: "https://drive.google.com/file/d/1tK4SXPyrQpn-AVM5wIFbukcKmG9oBL7G/view?usp=drivesdk"
+    },
+    { 
       logo: `${import.meta.env.BASE_URL}meta.png`,  
       name: "React Native", 
       issuer: "Meta", 
